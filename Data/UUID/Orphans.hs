@@ -23,4 +23,4 @@ $(deriveLiftMany [
 -- | The Show instance for UUID does not return a string containing a
 -- haskell expression, so if that is required use this function instead.
 showUUID :: UUID -> String
-showUUID uuid = "(let Just x = Data.UUID.fromString " ++ show (show uuid) ++ " in x)"
+showUUID uuid = "(read " ++ show (show uuid) ++ " :: UUID)"
