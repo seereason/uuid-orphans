@@ -14,11 +14,9 @@ instance PathInfo UUID where
   fromPathSegments = pToken (const ("UUID" :: String)) checkUUID
     where checkUUID txt = fromString (T.unpack txt)
 
-#if !__GHCJS__
 $(deriveLiftMany [
    ''UUID
   ])
-#endif
 
 -- | The Show instance for UUID does not return a string containing a
 -- haskell expression, so if that is required use this function instead.
