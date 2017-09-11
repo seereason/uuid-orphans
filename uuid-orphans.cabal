@@ -30,4 +30,4 @@ library
 
 source-repository head
   type:     git
-  location: git://github.com/ddssff/uuid-orphans.git
+  location: git://github.com/seereason/uuid-orphans.git
