@@ -1,6 +1,7 @@
 {-# LANGUAGE CPP, DeriveGeneric #-}
 #if MIN_VERSION_safecopy(0,9,5)
-{-# DeriveLift, StandaloneDeriving #-}
+{-# LANGUAGE DeriveLift #-}
+{-# LANGUAGE StandaloneDeriving #-}
 #else
 {-# LANGUAGE TemplateHaskell #-}
 #endif
