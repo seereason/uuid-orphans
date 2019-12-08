@@ -1,5 +1,5 @@
 name:               uuid-orphans
-version:            1.4.3
+version:            1.4.4
 cabal-version:      >= 1.10
 build-type:         Simple
 license:            BSD3
