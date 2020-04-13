@@ -1,9 +1,4 @@
-{-# LANGUAGE CPP, DeriveGeneric, DeriveLift #-}
-#if MIN_VERSION_safecopy(0,9,5)
-{-# LANGUAGE StandaloneDeriving #-}
-#else
-{-# LANGUAGE TemplateHaskell #-}
-#endif
+{-# LANGUAGE CPP, DeriveGeneric, DeriveLift, StandaloneDeriving, TemplateHaskell #-}
 
 module Data.UUID.Orphans (showUUID) where
 
