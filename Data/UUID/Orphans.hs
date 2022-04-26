@@ -40,7 +40,9 @@ instance SafeCopy UUID where
       errorTypeName _ = "Data.UUID.Types.Internal.UUID"
 #endif
 
+#if !MIN_VERSION_uuid_types(1,0,5)
 deriving instance Lift UUID
+#endif
 
 instance PathInfo UUID where
   toPathSegments = (:[]) . T.pack . toString
